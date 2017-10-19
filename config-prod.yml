@@ -8,3 +8,14 @@ server:
     username: rabbitadmin
     password: 123456
     virtual-host: /
+
+eureka:
+  instance:
+    appname: config
+    metadata-map:
+      cluster: lbd-cluster
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${server.discovery.host}:${server.discovery.port}/eureka/

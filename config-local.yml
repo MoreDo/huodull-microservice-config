@@ -1,0 +1,10 @@
+server:
+  discovery:
+    host: 192.168.8.65
+    prot: 8761
+  rabbit:
+    host: 192.168.8.65
+    port: 5672
+    username: rabbitadmin
+    password: 123456
+    virtual-host: /

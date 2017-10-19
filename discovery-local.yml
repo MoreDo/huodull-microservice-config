@@ -1,4 +1,0 @@
-server:
-  discovery:
-    host: 192.168.8.65
-    prot: 8761

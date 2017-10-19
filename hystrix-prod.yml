@@ -1,0 +1,13 @@
+server:
+  port: 7979
+
+eureka:
+  instance:
+    appname: hystrix
+    metadata-map:
+      cluster: lbd-cluster
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.8.39:8761/eureka/

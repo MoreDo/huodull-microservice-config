@@ -1,13 +1,5 @@
 server:
-  discovery:
-    host: 192.168.8.39
-    prot: 8761
-  rabbit:
-    host: 192.168.8.65
-    port: 5672
-    username: rabbitadmin
-    password: 123456
-    virtual-host: /
+  port: 8888
 
 eureka:
   instance:
@@ -18,4 +10,12 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${server.discovery.host}:${server.discovery.port}/eureka/
+      defaultZone: http://192.168.8.39:8761/eureka/
+
+spring:
+  rabbitmq:
+    host: 192.168.8.38
+    port: 5672
+    username: rabbitadmin
+    password: 123456
+    virtual-host: /

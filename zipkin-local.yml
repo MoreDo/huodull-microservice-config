@@ -1,0 +1,11 @@
+server:
+  port: 7411
+
+eureka:
+  instance:
+    appname: zipkin
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.8.65:8761/eureka/

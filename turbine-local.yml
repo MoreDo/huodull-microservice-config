@@ -1,0 +1,17 @@
+server:
+  port: 7090
+
+eureka:
+  instance:
+    appname: turbine
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://192.168.8.65:8761/eureka/
+
+turbine:
+  app-config: crawler,message,uua,prodcenter,resource,ris,store,user,userprod,userprod-opt,userprod-synchronize,userprod-synchronizeDhgate
+  aggregator:
+    clusterConfig: lbd-cluster
+  cluster-name-expression: metadata['cluster']

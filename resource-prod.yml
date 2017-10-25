@@ -1,0 +1,46 @@
+server:
+  port: 9097
+
+swagger:
+  package: com.lbd.cloud.service.resource.controller
+  title: 资源服务
+  description: 资源微服务
+  termsOfServiceUrl: https://github.com/MoreDo
+  contact:
+    name: MoreDo
+    url: https://github.com/MoreDo
+    email: 419092109@qq.com
+  version: 1.0
+
+spring:
+  zipkin:
+    base-url: http://192.168.8.39:7411
+    enabled: false
+  data:
+    mongodb:
+      host: 192.168.8.38
+      port: 27017
+      database: resource
+      username: resource
+      password: resource
+
+security:
+  sessions: ALWAYS
+  basic:
+    enabled: false
+    authorize-mode: none
+  user:
+    name: lbd
+    password: 123456
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.8.39:8761/eureka/
+  instance:
+    appname: resource
+    metadata-map:
+      cluster: lbd-cluster
+
+resource:
+  domain: http://192.168.8.38:10000/resource

@@ -11,3 +11,10 @@ eureka:
     metadata-map:
       cluster: lbd-cluster
     lease-renewal-interval-in-seconds: 10
+
+spring:
+  boot:
+    admin:
+      turbine:
+        url: http://192.168.8.65:7090/turbine.stream
+        clusters: lbd-cluster

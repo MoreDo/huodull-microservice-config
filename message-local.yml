@@ -17,7 +17,7 @@ spring:
     base-url: http://192.168.8.65:7411
     enabled: false
   datasource:
-    url: jdbc:mysql://192.168.8.65:3306/message?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useOldAliasMetadataBehavior=true
+    url: jdbc:mysql://192.168.8.20:3306/message?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useOldAliasMetadataBehavior=true
     username: root
     password: 123456
     max-active: 20

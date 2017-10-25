@@ -4,7 +4,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://192.168.8.39:8761/eureka/
+      defaultZone: http://192.168.8.65:8761/eureka/
     registry-fetch-interval-seconds: 5
   instance:
     appname: spring-boot-admin
